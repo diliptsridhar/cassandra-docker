@@ -12,10 +12,10 @@ pipeline {
             steps { 
            
                 sh '''
-                    echo 'Checking for  orion-db Docker Image...'
-                    sudo -n docker ps -q --filter "name=rabbitmq" | grep -q . && echo Found || echo Not Found 
-                    echo 'Removing  orion-db ...'
-                    sudo -n docker ps -q --filter "name=orion-db" | grep -q . && docker stop orion-db && docker rm -fv orion-db 
+               //     echo 'Checking for  orion-db Docker Image...'
+               //      sudo -n docker ps -q --filter "name=rabbitmq" | grep -q . && echo Found || echo Not Found 
+              //      echo 'Removing  orion-db ...'
+             //       sudo -n docker ps -q --filter "name=orion-db" | grep -q . && docker stop orion-db && docker rm -fv orion-db 
                    ''' 
             }
             post {
