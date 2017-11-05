@@ -19,7 +19,7 @@ pipeline {
             post {
                 success {
                     echo 'Post Success...'
-                    echo ${params.cassandra_dev}
+                    echo "${params.cassandra_dev}"
                     
                 }
             }
