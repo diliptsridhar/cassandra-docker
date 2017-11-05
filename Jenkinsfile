@@ -12,7 +12,7 @@ pipeline {
             steps { 
            
                 sh '''
-                sudo  -n docker run -d -it --name orion-db -p 0.0.0.0:9042:9042 -p 7000-7001:7000-7001 -p 7199:7199 -p 9160:9160 cassandra:latest bash
+                sudo  -n docker run -d -it --name orion-cassandra-db -p 0.0.0.0:9042:9042 -p 7000-7001:7000-7001 -p 7199:7199 -p 9160:9160 cassandra:latest bash
 
 ''' 
             }
