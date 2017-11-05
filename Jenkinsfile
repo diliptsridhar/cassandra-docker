@@ -13,9 +13,9 @@ pipeline {
            
                 sh '''
                     echo 'Stopping  orion-db ...'
-                    sudo -n docker ps -a |  grep "orion-db" | awk '{print $1}' | xargs docker stop bash
+                    sudo -n docker ps -a |  grep "orion-db" | awk '{print $1}' | xargs docker stop 
                     echo 'Removing  orion-db ...'
-                    sudo -n docker ps -a |  grep "orion-db" | awk '{print $1}' | xargs docker rm   bash
+                    sudo -n docker ps -a |  grep "orion-db" | awk '{print $1}' | xargs docker rm 
                    ''' 
             }
             post {
